@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="fr/css/main.css">
+    <title>Accueil</title>
+</head>
+
+<body x-data="{ openMenu: false }">
+    <div x-show="openMenu" class="menu-open-background"></div>
+    <header>
+        <img class="logo" src="public/img/logo.png" alt="logo">
+        <img class="menu1" src="public/img/menu.svg" alt="menu" x-on:click="openMenu = !openMenu">
+        <h1>Acceuil</h1>
+    </header>
+</body>
+
+</html>
