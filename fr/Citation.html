@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../src/css/page_citation.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../public/img/logo.png" alt="logo">
+        <img class="menu1" src="../public/img/menu.svg" alt="menu" x-on:click="openMenu = !openMenu">
+
+        <body x-data="{ openMenu: false }">
+            <div x-show="openMenu" class="menu-open-background">
+                <img class="menu1" src="/public/img/croix.svg" alt="croix" x-on:click="openMenu = !openMenu">
+                <p class="txt-menu1"><a href="index.html">Accueil</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Article</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Contact</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>À propos</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Glossaire</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Autre projets</a></p>
+            </div>
+            <h1 class="txt1"><br>Bibliothèque de la magie</h1>
+    </header>
+    <div class="partie1">
+        <p class="txt2">Citation</p>
+        <p class="txt3">La Citation Emblématique de Dumbledore</p>
+        <img class="img1" src="/public/img/dumbledore2.jpg" alt="">
+        <p class="txt5">« Il ne faut pas s’attarder sur les rêves et oublier
+        de vivre » est une réplique emblématique
+        prononcée par le professeur Dumbledore
+        dans le monde magique de Harry Potter.
+        Cette phrase traverse le cadre de la fiction pour
+        offrir une leçon de vie intemporelle et
+        universelle, qui résonne profondément avec les
+        lecteurs et les spectateurs.</p>
+        <p class="txt4">Origine de la Citation</p>
+        <p class="txt5">Cette citation est extraite du film
+        « Harry Potter à l’école des sorciers »,
+        et elle est prononcée lorsque Dumbledore
+        conseille Harry sur la recherche de la Pierre
+        Philosophale. Cependant, son sens va bien
+        au-delà de ce contexte spécifique.</p>
+        <p class="txt4">L'Équilibre Entre les Rêves et la Réalité</p>
+        <p class="txt5"> L’idée de « ne pas s’attarder sur les rêves »
+        ne signifie pas que les rêves sont inutiles.
+        Au contraire, les rêves sont un moteur puissant
+        qui peut nous inspirer à poursuivre nos objectifs.
+        Cependant, il est vital de rester enraciné dans le
+        moment présent et de profiter de la vie telle
+        qu’elle se présente. <br>
+        Le bonheur, l’amour, l’amitié et les expériences
+        du quotidien sont des éléments essentiels de
+        l’existence, que l’on ne devrait pas négliger
+        en poursuivant des aspirations lointaines.
+        Cette citation nous encourage également à
+        trouver un équilibre entre nos ambitions et
+        notre bien-être. La quête incessante de nos
+        rêves peut nous amener à sacrifier notre
+        bonheur actuel, ce qui est une perspective
+        peu souhaitable.</p>
+        <p class="txt4">Profiter des Moments Précieux</p>
+        <p class="txt5">La vie est faite de moments précieux, et il serait
+        dommage de les perdre à rêver de demain sans
+        jamais les vivre pleinement aujourd’hui.</p>
+    </div>
+    <footer>
+        <img class="logo3" src="/public/img/logo2.png" alt="">
+        <p class="txt_footer2"><img class="icone_footer" src="/public/img/appel.png" alt="contact">
+            XX-XX-XX-XX-XX
+        </p>
+        <p class="txt_footer1"><img class="icone_footer" src="/public/img/envelope.png" alt="mail">
+            edouard.hashimoto@edu.univ-fcomte.fr</p>
+        <p class="txt_footer3">Nous contacter</p>
+        <p class="txt_footer3">Mentions légales</p>
+        <p><img class="icone_footer2" src="/public/img/logommi.png" alt=""><img class="icone_footer2"
+                src="/public/img/twitter.png" alt=""><img class="icone_footer2" src="/public/img/insta.png" alt="">
+        </p>
+    </footer>
+</body>
+
+</html>
