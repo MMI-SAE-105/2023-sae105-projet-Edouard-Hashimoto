@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra One:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem Kufi:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim Nightshade:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "Harry P";
+    src: url("/public/fonts/HARRYP__.TTF");
+}
+
+header {
+    position: absolute;
+    background-color: #F5F5F5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    margin-top: -5px;
+}
+
+header h1 {
+    color: black;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 18px;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.logo {
+    width: 80px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.menu1 {
+    width: 48px;
+    height: 48px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.menu-open-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    background-size: cover;
+    z-index: 9999;
+}
+
+.txt-menu {
+    font-family: 'Yatra One', sans-serif;
+    font-size: 50px;
+    color: #F5F5F5;
+    margin-bottom: 150px;
+}
+
+
+.txt-menu1 {
+    font-family: 'Yatra One', sans-serif;
+    font-size: 50px;
+    line-height: 0.2;
+}
+
+.txt-menu2 {
+    font-family: 'Yatra One', sans-serif;
+    font-size: 50px;
+    line-height: 0.2;
+    margin-top: -10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.txt2 {
+    text-align: center;
+    font-size: 120px;
+    font-family: "Harry P";
+    color: #F5F5F5;
+}
+
+.txt3 {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Yatra One";
+    color: #F5F5F5;
+    margin-top: -80px;
+}
+
+.txt4 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+    font-family: "Yatra One";
+    color: #F5F5F5;
+}
+
+.txt5 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: "Reem Kufi";
+    color: #F5F5F5;
+    margin-bottom: 60px;
+}
+
+.partie1 {
+    margin-top: -30px;
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: #1E1D44;
+}
+
+.img1 {
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.ligne {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.ligne2 {
+    width: 300px;
+    height: 100px;
+    margin-top: -50px;
+    display: block;
+}
+
+.img2 {
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    position: absolute;
+    background-color: #141414;
+    width: 100%;
+    height: 400px;
+    margin-top: -65px;
+    left: 0;
+    justify-content: space-between;
+}
+
+.icone_footer {
+    width: 45px;
+    margin-left: 10px;
+}
+
+.txt_footer1 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 15px;
+    color: #F5F5F5;
+}
+
+.txt_footer2 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 30px;
+    color: #F5F5F5;
+}
+
+.txt_footer3 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 15px;
+    color: #F5F5F5;
+    margin-left: 15px;
+}
+
+.icone_footer2 {
+    display: inline-block;
+    width: 45px;
+    margin-left: 10px;
+}
+
+
+.logo3 {
+    height: 75px;
+    width: 75px;
+}
