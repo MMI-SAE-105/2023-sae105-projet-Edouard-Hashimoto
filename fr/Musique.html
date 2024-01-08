@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../src/css/page_musique.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../public/img/logo.png" alt="logo">
+        <img class="menu1" src="../public/img/menu.svg" alt="menu" x-on:click="openMenu = !openMenu">
+
+        <body x-data="{ openMenu: false }">
+            <div x-show="openMenu" class="menu-open-background">
+                <img class="menu1" src="/public/img/croix.svg" alt="croix" x-on:click="openMenu = !openMenu">
+                <p class="txt-menu1"><a href="index.html">Accueil</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Article</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Contact</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>À propos</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Glossaire</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Autre projets</a></p>
+            </div>
+            <h1 class="txt1"><br>Bibliothèque de la magie</h1>
+    </header>
+    <div class="partie1">
+        <p class="txt2">Musique</p>
+        <p class="txt3">La Composition Épique d'Alexandre Desplat</p>
+        <img class="img1" src="/public/img/imgmusique.webp" alt="">
+        <p class="txt5">La musique intitulée "Battle of Hogwarts" est un
+            Sound Track créé par le compositeur français
+            Alexandre Desplat. Cette pièce est célèbre pour
+            être incluse dans la bande originale du film
+            "Harry Potter et les Reliques de la Mort - Partie 2
+            ", qui est la dernière partie de la série de films
+            Harry Potter.</p>
+        <p class="txt4">Une Scène Cruciale de
+            l'Univers de Harry Potter</p>
+        <p class="txt5">La "Battle of Hogwarts" est une scène épique
+            et cruciale dans l'univers de Harry Potter.
+            C'est la bataille finale qui se déroule à Poudlard
+            entre les forces du bien, dirigées par
+            Harry Potter, et les forces du mal, menées par
+            Voldemort. La composition musicale
+            d'Alexandre Desplat accompagne cette
+            bataille épique, ajoutant une dimension
+            émotionnelle et dramatique à l'action.</p>
+        <p class="txt4">Une Œuvre Orchestrale
+            Puissante</p>
+        <p class="txt5">La musique elle-même est une pièce orchestrale
+            puissante, avec des mélodies mémorables et
+            des moments émotionnels poignants.
+            Alexandre Desplat est célèbre pour son travail
+            sur de nombreuses bandes sonores de films
+            emblématiques, et sa contribution à la musique
+            de Harry Potter est particulièrement appréciée
+            par les fans de la saga.</p>
+        <p class="txt5">"Battle of Hogwarts" est un exemple parfait de
+            la manière dont la musique peut renforcer
+            l'expérience cinématographique, en
+            intensifiant les émotions et en créant une
+            atmosphère immersive. Elle reste l'une des
+            compositions les plus marquantes de
+            John Williams et est associée à un moment
+            crucial de la série Harry Potter.</p>
+    </div>
+</body>
