@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../src/css/contact.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../public/img/logo.png" alt="logo">
+        <img class="menu1" src="../public/img/menu.svg" alt="menu" x-on:click="openMenu = !openMenu">
+
+        <body x-data="{ openMenu: false }">
+            <div x-show="openMenu" class="menu-open-background">
+                <img class="menu1" src="/public/img/croix.svg" alt="croix" x-on:click="openMenu = !openMenu">
+                <p class="txt-menu1"><a href="index.html">Accueil</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Article</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Contact</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>À propos</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Glossaire</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Autre projets</a></p>
+            </div>
+            <h1 class="txt1"><br>Bibliothèque de la magie</h1>
+    </header>
+    <div class="partie1">
+        <p class="txt2">Conatact</p>
+        <form class="form">
+            <label for="name" class="txt3">Nom:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email" class="txt3">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="subject" class="txt3">Sujet:</label><br>
+            <input type="text" id="subject" name="subject"><br>
+            <label for="message" class="txt3">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Envoyer"><br><br><br>
+        </form>
+    </div>
+    <footer>
+        <img class="logo3" src="/public/img/logo2.png" alt="">
+        <p class="txt_footer2"><img class="icone_footer" src="/public/img/appel.png" alt="contact">
+            XX-XX-XX-XX-XX
+        </p>
+        <p class="txt_footer1"><img class="icone_footer" src="/public/img/envelope.png" alt="mail">
+            edouard.hashimoto@edu.univ-fcomte.fr</p>
+        <p class="txt_footer3">Nous contacter</p>
+        <p class="txt_footer3">Mentions légales</p>
+        <p><img class="icone_footer2" src="/public/img/logommi.png" alt=""><img class="icone_footer2"
+                src="/public/img/twitter.png" alt=""><img class="icone_footer2" src="/public/img/insta.png" alt="">
+        </p>
+    </footer>
+</body>
+
+</html>
