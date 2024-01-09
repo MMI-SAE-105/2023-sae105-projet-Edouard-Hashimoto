@@ -89,14 +89,50 @@ a {
 
 .txt3 {
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: "Yatra One";
+    color: #F5F5F5;
+    text-decoration: underline;
+}
+
+.txt4 {
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 22px;
     font-family: "Yatra One";
     color: #F5F5F5;
+}
+
+.txt5 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: "Reem Kufi";
+    color: #F5F5F5;
+    margin-bottom: 50px;
+}
+
+.txt6 {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: "Yatra One";
+    color: #F5F5F5;
+    text-decoration: underline;
     margin-top: -80px;
 }
 
-
-
+.txt7 {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: "Reem Kufi";
+    color: #F5F5F5;
+    margin-bottom: 50px;
+}
 
 .partie1 {
     margin-top: -30px;
@@ -176,9 +212,4 @@ footer {
 .logo3 {
     height: 75px;
     width: 75px;
-}
-
-.form {
-    margin-bottom: 60px;
-    margin-left: 10px;
 }
