@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../src/css/page_realisateur.css">
+    <title>Réalisateur</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../public/img/logo.png" alt="logo">
+        <img class="menu1" src="../public/img/menu.svg" alt="menu" x-on:click="openMenu = !openMenu">
+
+        <body x-data="{ openMenu: false }">
+            <div x-show="openMenu" class="menu-open-background">
+                <img class="menu1" src="/public/img/croix.svg" alt="croix" x-on:click="openMenu = !openMenu">
+                <p class="txt-menu1"><a href="index.html">Accueil</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Articles.html">Article</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Contact.html">Contact</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="a_propos.html">À propos</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Glossaire.html">Glossaire</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Autre projets</a></p>
+            </div>
+            <h1 class="txt1"><br>Bibliothèque de la magie</h1>
+    </header>
+    <div class="partie1">
+        <p class="txt2"> <br>Producteur</p>
+        <p class="txt3">Le Réalisateur Magique Chris Columbus</p>
+        <img class="img1" src="/public/img/chris_columbus2.jpg" alt="">
+        <p class="txt4">Chris Columbus et son rôle
+            essentiel dans l'univers de
+            Harry Potter</p>
+        <p class="txt5">Le premier film de Harry Potter, intitulé
+            « Harry Potter à l’école des sorciers, » a été
+            réalisé par le cinéaste américain
+            Chris Columbus, né en 1958. Columbus est un
+            réalisateur et producteur de renom, et il est
+            particulièrement célèbre pour son travail sur
+            divers films à succès, dont « Maman, j’ai raté
+            l’avion », une comédie classique qui a captivé de
+            s spectateurs. Cependant, il est incontestable
+            que sa contribution à l’univers magique de
+            Harry Potter est l’un de ses accomplissements
+            les plus notables.</p>
+        <p class="txt4">La Recréation de l'Univers de
+            Harry Potter</p>
+        <p class="txt5">L’adaptation cinématographique de
+            « Harry Potter à l’école des sorciers » visait à
+            donner vie à l’univers riche et fascinant créé par
+            l’auteure britannique J.K. Rowling.
+            Chris Columbus a réussi avec brio à capturer
+            l’essence de ce monde magique, en recréant
+            fidèlement de nombreux détails du livre.
+            Les décors somptueux de Poudlard ainsi que les
+            créatures fantastiques et les personnages
+            emblématiques, ont été représentés avec une
+            grande minutie, ce qui a permis aux fans de se
+            plonger totalement dans cet univers envoûtant.</p>
+        <p class="txt4">Un Casting Exceptionnel</p>
+        <p class="txt5">L’élément important qui a contribué au succès
+            de ce premier film a été le casting exceptionnel.
+            Columbus a choisi des acteurs relativement
+            inconnus à l’époque pour incarner les rôles
+            principaux. Daniel Radcliffe a été choisi pour
+            interpréter le rôle emblématique de
+            Harry Potter, Rupert Grint celui de Ron Weasley,
+            et Emma Watson celui d’Hermione Granger.
+            Ces jeunes acteurs ont apporté une fraîcheur et
+            une authenticité aux personnages qui ont
+            immédiatement conquis le public. Leur talent
+            et leur dévouement à donner vie à ces héros
+            adolescents ont contribué à l’immersion des
+            spectateurs dans l'histoire. <br><br>
+            En fin de compte, le film « Harry Potter à l’école
+            des sorciers » réalisé par Chris Columbus a
+            ouvert la porte à une franchise
+            cinématographique extraordinaire qui a
+            enchanté des millions de personnes à travers le
+            monde. La combinaison réussie entre la vision
+            de Columbus, la magie de l’œuvre de
+            J.K. Rowling et le talent des jeunes acteurs a jeté
+            les bases de l’une des sagas
+            cinématographiques les plus populaires de
+            tous les temps. Ce film a réussi à capturer
+            l’essence de l’univers de Harry Potter, et il reste
+            un jalon majeur dans l’histoire du cinéma
+            fantastique. <br><br></p>
+    </div>
+    <footer>
+        <img class="logo3" src="/public/img/logo2.png" alt="">
+        <p class="txt_footer2"><img class="icone_footer" src="/public/img/appel.png" alt="contact">
+            XX-XX-XX-XX-XX
+        </p>
+        <p class="txt_footer1"><img class="icone_footer" src="/public/img/envelope.png" alt="mail">
+            edouard.hashimoto@edu.univ-fcomte.fr</p>
+        <p class="txt_footer3">Nous contacter</p>
+        <p class="txt_footer3">Mentions légales</p>
+        <p><img class="icone_footer2" src="/public/img/logommi.png" alt=""><img class="icone_footer2"
+                src="/public/img/twitter.png" alt=""><img class="icone_footer2" src="/public/img/insta.png" alt="">
+        </p>
+    </footer>
+</body>
+
+</html>

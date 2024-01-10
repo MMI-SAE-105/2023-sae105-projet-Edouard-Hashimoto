@@ -5,17 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="fr/css/main.css">
+    <link rel="stylesheet" href="../src/css/main.css">
     <title>Accueil</title>
 </head>
 
 <body x-data="{ openMenu: false }">
     <div x-show="openMenu" class="menu-open-background"></div>
     <header>
-        <img class="logo" src="public/img/logo.png" alt="logo">
-        <img class="menu1" src="public/img/menu.svg" alt="menu" x-on:click="openMenu = !openMenu">
-        <h1>Acceuil</h1>
-    </header>
-</body>
+        <img class="logo" src="../public/img/logo.png" alt="logo">
+        <img class="menu1" src="../public/img/menu.svg" alt="menu" x-on:click="openMenu = !openMenu">
+
+        <body x-data="{ openMenu: false }">
+            <div x-show="openMenu" class="menu-open-background">
+                <img class="menu1" src="/public/img/croix.svg" alt="croix" x-on:click="openMenu = !openMenu">
+                <p class="txt-menu1"><a href="index.html">Accueil</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Articles.html">Article</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Contact.html">Contact</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="a_propos.html">À propos</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Glossaire.html">Glossaire</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Autre projets</a></p>
+            </div>
+            <h1 class="txt1">Bibliothèque de la magie</h1>
+            <div class="partie1">
+                <p class="txt2">“Il ne faut s’attarder <br>sur les rêves et<br> oublier de vivre”</p>
+            </div>
+            <div class="partie2">
+                <p class="txt3"><br>Bienvenue sur notre site de réplique dédié à l'univers magique de Harry Potter !
+                    Plongeons dans un
+                    monde de sorcellerie, d'aventure et de magie, en revisitant les moments les plus emblématiques de
+                    cette saga
+                    bien-aimée créée par J.K. Rowling.</p>
+                <img class="logo2" src="/public/img/logo-hogwarts.png" alt="">
+                <img class="ligne" src="/public/img/ligne.png" alt="">
+                <p class="txt4">Le Premier Film - Harry Potter à l'école des sorciers</p>
+                <a href="/fr/Film.html"><img class="imgaccueil" src="/public/img/harrypotter1.webp" alt=""></a>
+                <a href="/fr/Film.html"><p class="txt5">"Harry Potter à l'école des sorciers", a attiré des fans de la magie du monde entier en
+                    introduisant Harry, qui entre dans le monde de la magie.</p></a>
+                <img class="ligne" src="/public/img/ligne.png" alt="">
+                <p class="txt4">Le Livre Épique - "Harry Potter et les Reliques de la Mort"</p>
+                <a href="/fr/Livre.html"><img class="imgaccueil" src="/public/img/imglivre.jpg" alt=""></a>
+                <a href="/fr/Livre.html"><p class="txt5">Le septième et dernier tome, "Harry Potter et les Reliques de la Mort", a marqué le
+                    point culminant de la saga.</p></a>
+                <img class="ligne" src="/public/img/ligne.png" alt="">
+                <p class="txt4">La Musique Envoûtante - “Battle of Hogwarts”</p>
+                <a href="/fr/Musique.html"><img class="imgaccueil2" src="/public/img/imgmusique.webp" alt=""></a>
+                <a href="/fr/Musique.html"><p class="txt5">"Battle of Hogwarts" d'Alexandre Desplat accompagne la bataille finale.</p></a>
+                <img class="ligne" src="/public/img/ligne.png" alt="">
+                <p class="txt4">La parole de Dumbledore - "Il ne faut pas s'attarder sur les rêves et oublier de vivre"
+                </p>
+                <a href="/fr/Citation.html"><img class="imgaccueil2" src="/public/img/dumbledore1.jpg" alt=""></a>
+                <a href="/fr/Citation.html"><p class="txt5">l'importance de vivre le moment présent , même dans un monde rempli de magie et
+                    d'aventures.</p></a>
+                <img class="ligne" src="/public/img/ligne.png" alt="">
+                <p class="txt4">Le Réalisateur Magique - Chris Columbus</p>
+                <a href="/fr/Réalisateur.html"><img class="imgaccueil" src="/public/img/chris_columbus.jpg" alt="">
+                <p class="txt5">Le réalisateur qui a donné vie à l'école de sorcellerie de Poudlard.</p></a>
+            </div>
+            <footer>
+                <img class="logo3" src="/public/img/logo2.png" alt="">
+                <p class="txt_footer2"><img class="icone_footer" src="/public/img/appel.png" alt="contact">
+                    XX-XX-XX-XX-XX
+                </p>
+                <p class="txt_footer1"><img class="icone_footer" src="/public/img/envelope.png" alt="mail">
+                    edouard.hashimoto@edu.univ-fcomte.fr</p>
+                <p class="txt_footer3">Nous contacter</p>
+                <p class="txt_footer3">Mentions légales</p>
+                <p><img class="icone_footer2" src="/public/img/logommi.png" alt=""><img class="icone_footer2"
+                        src="/public/img/twitter.png" alt=""><img class="icone_footer2"
+                        src="/public/img/insta.png" alt="">
+                </p>
+            </footer>
+        </body>
 
 </html>

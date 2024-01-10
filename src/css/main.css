@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra One:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem Kufi:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim Nightshade:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "Harry P";
+    src: url("/public/fonts/HARRYP__.TTF");
+}
+
+header {
+    position: absolute;
+    background-color: #F5F5F5;
+    top: 20;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    margin-top: -5px;
+}
+
+
+.txt1 {
+    color: black;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 18px;
+}
+
+.txt2 {
+    margin-top: 120px;
+    font-size: 55px;
+    font-family: "Jim Nightshade";
+    text-align: center;
+    line-height: 80px;
+}
+
+.txt3 {
+    margin-top: 300px;
+    font-family: "Reem Kufi";
+    font-size: 22px;
+    color: #F5F5F5;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.txt4 {
+    font-family: "Yatra One";
+    font-size: 22px;
+    margin-left: 10px;
+    color: #F5F5F5;
+}
+
+.txt5 {
+    font-family: "Reem Kufi";
+    font-size: 18px;
+    margin-left: 10px;
+    color: #F5F5F5;
+    margin-right: 10px;
+}
+
+.imgaccueil {
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.imgaccueil2 {
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.logo {
+    width: 80px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.menu1 {
+    width: 48px;
+    height: 48px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.menu-open-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 375px;
+    height: 812px;
+    background-image: url(/public/img/fond_menu.jpg);
+    background-size: cover;
+    z-index: 9999;
+}
+
+.txt-menu {
+    font-family: 'Yatra One', sans-serif;
+    font-size: 50px;
+    color: #F5F5F5;
+    margin-bottom: 150px;
+}
+
+.txt-menu1 {
+    font-family: 'Yatra One', sans-serif;
+    font-size: 50px;
+    line-height: 0.2;
+    margin-top: 150px;
+}
+
+.txt-menu2 {
+    font-family: 'Yatra One', sans-serif;
+    font-size: 50px;
+    line-height: 0.2;
+    margin-top: -10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.partie1 {
+    position: relative;
+}
+
+.partie1::before {
+    content: "";
+    background-image: url(/public/img/fond1.jpg);
+    opacity: 0.3;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    bottom: -600px;
+    right: 0;
+    z-index: -1;
+    margin-top: -80px;
+}
+
+.partie2 {
+    background-color: #761515;
+}
+
+.logo2 {
+    height: 200px;
+    width: 100%;
+}
+
+.ligne {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.ligne2 {
+    width: 300px;
+    height: 100px;
+    margin-top: -50px;
+    display: block;
+}
+
+footer {
+    position: absolute;
+    background-color: #141414;
+    width: 100%;
+    height: 400px;
+    margin-top: -18px;
+}
+
+.icone_footer {
+    width: 45px;
+    margin-left: 10px;
+}
+
+.txt_footer1 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 15px;
+    color: #F5F5F5;
+}
+
+.txt_footer2 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 30px;
+    color: #F5F5F5;
+}
+
+.txt_footer3 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 15px;
+    color: #F5F5F5;
+    margin-left: 15px;
+}
+
+.icone_footer2 {
+    width: 45px;
+    margin-left: 10px;
+}
+
+.logo3 {
+    height: 75px;
+    width: 75px;
+}

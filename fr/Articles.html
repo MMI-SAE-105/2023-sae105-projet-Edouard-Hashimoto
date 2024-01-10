@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/page_articles.css">
+    <title>Articles</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../public/img/logo.png" alt="logo">
+        <img class="menu1" src="../public/img/menu.svg" alt="menu" x-on:click="openMenu = !openMenu">
+
+        <body x-data="{ openMenu: false }">
+            <div x-show="openMenu" class="menu-open-background">
+                <img class="menu1" src="/public/img/croix.svg" alt="croix" x-on:click="openMenu = !openMenu">
+                <p class="txt-menu1"><a href="index.html">Accueil</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Articles.html">Article</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Contact.html">Contact</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="a_propos.html">À propos</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Glossaire.html">Glossaire</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href=>Autre projets</a></p>
+            </div>
+            <h1 class="txt1"><br>Bibliothèque de la magie</h1>
+    </header>
+    <div class="partie1">
+        <p class="txt2">Article</p>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <button @click="parent = $refs.parent ; parent.scrollLeft -= parent.clientWidth"
+                class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant">
+                &lt;
+            </button>
+            <button @click="parent = $refs.parent ; parent.scrollLeft += parent.clientWidth"
+                class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant">></button>
+            <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="
+                    hrefCourant = '#'+
+                                      [...$refs.parent.children]
+                                       .find(e=>e.getBoundingClientRect().x>=0)
+                                       .id
+                                                         ">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <div class="inner">
+                        <figure>
+                            <a href="Film.html"><img class="img_c" src="/public/img/film1.jpg" alt="image ecran 1"><br>
+                            <figcaption class="txtf">Le Premier Film <br>Harry Potter à l'école des sorciers
+                            </figcaption></a>
+                        </figure>
+                    </div>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <div class="inner">
+                        <figure>
+                            <a href="Livre.html"><img class="img_c" src="/public/img/harry_livre1.jpg" alt="image ecran 2">
+                            <figcaption class="txtf">Le Livre Épique - <br>
+                                "Harry Potter et les Reliques de la Mort"</figcaption></a>
+                        </figure>
+                    </div>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <div class="inner">
+                        <figure>
+                            <a href="Musique.html"><img class="img_c" src="/public/img/imgmusique.webp" alt="image ecran 3">
+                            <figcaption class="txtf">La Musique Envoûtante <br>
+                                “Battle of Hogwarts”
+                            </figcaption></a>
+                        </figure>
+                    </div>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <div class="inner">
+                        <figure>
+                            <a href="Citation.html"><img class="img_c" src="/public/img/dumbledore3.jpg" alt="image ecran 4">
+                            <figcaption class="txtf">La parole de Dumbledore <br>
+                                "Il ne faut pas s'attarder sur les <br>
+                                rêves et oublier de vivre"
+                            </figcaption></a>
+                        </figure>
+                    </div>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <div class="inner">
+                        <figure>
+                            <a href="Réalisateur.html"><img class="img_c" src="/public/img/chris_columbus2.jpg" alt="image ecran 5">
+                            <figcaption class="txtf">Le Réalisateur Magique <br>
+                                Chris Columbus
+                            </figcaption></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="ligne" src="/public/img/ligne.png" alt="">
+        <p class="txt6">Frise</p>
+        <img class="imgfrise1" src="/public/img/frise1.png" alt="">
+        <img class="imgfrise2" src="/public/img/frise2.png" alt="">
+        <img class="imgfrise2" src="/public/img/frise3.png" alt="">
+        <img class="imgfrise2" src="/public/img/frise4.png" alt="">
+        <img class="imgfrise2" src="/public/img/frise5.png" alt="">
+        <img class="imgfrise2" src="/public/img/frise6.png" alt="">
+        <img class="ligne" src="/public/img/ligne.png" alt="">
+        <p class="txt6">Liste des films</p>
+        <p class="txt4">Harry Potter à l’école des sorciers</p>
+        <div class="film">
+            <br><img class="affiche" src="/public/img/film2.webp" alt="">
+            <p class="txt5">Le film suit Harry
+                Potter, un jeune
+                orphelin découvrant
+                qu'il est un sorcier et
+                sa première année à
+                Poudlard, l'école de
+                sorcellerie. <br><br></p>
+        </div>
+        <p class="txt7">Harry Potter
+            et la Chambre des secrets</p>
+        <div class="film">
+            <br><img class="affiche" src="/public/img/film3.webp" alt="">
+            <p class="txt5">La deuxième année de
+                Harry à Poudlard, où
+                il enquête sur des
+                événements étranges
+                liés à la légendaire
+                Chambre des secrets. <br><br></p>
+        </div>
+        <p class="txt7">Harry Potter et le Prisonnier d'Azkaban</p>
+        <div class="film">
+            <br><img class="affiche" src="/public/img/film4.jpg" alt="">
+            <p class="txt5">Harry découvre des
+                vérités sur son passé
+                tout en cherchant à
+                protéger l'école d'un
+                dangereux criminel
+                évadé, Sirius Black. <br><br></p>
+        </div>
+        <p class="txt7">Harry Potter et la Coupe de Feu</p>
+        <div class="film">
+            <br><img class="affiche" src="/public/img/film5.jpg" alt="">
+            <p class="txt5">Harry est inscrit de
+                force dans un
+                dangereux tournoi de
+                sorciers et découvre
+                de nouveaux
+                mystères sur le retour
+                de Lord Voldemort. <br><br></p>
+        </div>
+        <p class="txt7">Harry Potter
+            et le Prince de sang-mêlé</p>
+        <div class="film">
+            <br><img class="affiche" src="/public/img/film6.jpg" alt="">
+            <p class="txt5">Les origines du
+                Seigneur des
+                Ténèbres sont
+                révélées, et Harry et
+                ses amis préparent la
+                bataille finale
+                contre lui. <br><br></p>
+        </div>
+
+        <p class="txt7">Harry Potter et les Reliques de la Mort Partie 1</p>
+        <div class="film">
+            <br><img class="affiche" src="/public/img//film7.webp" alt="">
+            <p class="txt5">Harry, Ron et
+                Hermione fuient et
+                cherchent les
+                Horcruxes, les objets
+                qui contiennent des
+                parties de l'âme de
+                Voldemort.<br><br></p>
+        </div>
+        <p class="txt7">Harry Potter
+            et les Reliques de la Mort
+            Partie 2</p>
+        <div class="film">
+            <br><img class="affiche" src="/public/img/film8.jpg" alt="">
+            <p class="txt5">La conclusion épique
+                de la saga, où Harry
+                affronte Voldemort
+                et où les destins des
+                personnages sont
+                scellés.<br><br></p>
+        </div>
+    </div>
+    <footer>
+        <img class="logo3" src="/public/img/logo2.png" alt="">
+        <p class="txt_footer2"><img class="icone_footer" src="/public/img/appel.png" alt="contact">
+            XX-XX-XX-XX-XX
+        </p>
+        <p class="txt_footer1"><img class="icone_footer" src="/public/img/envelope.png" alt="mail">
+            edouard.hashimoto@edu.univ-fcomte.fr</p>
+        <p class="txt_footer3">Nous contacter</p>
+        <p class="txt_footer3">Mentions légales</p>
+        <p><img class="icone_footer2" src="/public/img/logommi.png" alt=""><img class="icone_footer2"
+                src="/public/img/twitter.png" alt=""><img class="icone_footer2" src="/public/img/insta.png" alt=""></p>
+    </footer>
+</body>
+
+</html>
