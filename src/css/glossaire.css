@@ -214,3 +214,9 @@ footer {
     height: 75px;
     width: 75px;
 }
+
+.imgg{
+        height: 200px;
+        margin: 0 auto;
+        display: block;
+}
