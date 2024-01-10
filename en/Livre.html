@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../src/css/page_livre.css">
+    <title>Livre</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="../public/img/logo.png" alt="logo">
+        <img class="menu1" src="../public/img/menu.svg" alt="menu" x-on:click="openMenu = !openMenu">
+
+        <body x-data="{ openMenu: false }">
+            <div x-show="openMenu" class="menu-open-background">
+                <img class="menu1" src="/public/img/croix.svg" alt="croix" x-on:click="openMenu = !openMenu">
+                <p class="txt-menu1"><a href="index.html">Accueil</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Articles.html">Article</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Contact.html">Contact</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="a_propos.html">À propos</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="Glossaire.html">Glossaire</a></p>
+                <img class="ligne2" src="/public/img/ligne.png" alt="">
+                <p class="txt-menu2"><a href="autres_projets.html">Autre projets</a></p>
+            </div>
+            <h1 class="txt1"><br>Bibliothèque de la magie</h1>
+    </header>
+    <div class="partie1">
+        <p class="txt2">Livre</p>
+        <p class="txt3">La Conclusion Épique “Harry Potter et les Reliques de la Mort”</p>
+        <img class="img1" src="/public/img/imglivre.jpg" alt="">
+        <p class="txt4">La Dernière Aventure de Harry Potter</p>
+        <p class="txt5">« Harry Potter et les Reliques de la Mort » est le septième et le dernier tome de la série «
+            Harry Potter » écrite par J.K. Rowling. Publié en 2007, ce livre a suscité une grande anticipation parmi les
+            fans et a finalement conclu l’épopée magique de Harry Potter de manière épique et émotionnelle.</p>
+        <img class="img2" src="/public/img/harry_livre1.jpg" alt="">
+        <p class="txt5">Le septième tome, « Harry Potter et les Reliques
+            de la Mort », débute avec un monde sorcier sous
+            le contrôle de Lord Voldemort et des <strong>Mangemorts.</strong> Harry, Ron et Hermione sont en
+            fuite, cherchant à détruire les <strong>Horcruxes.</strong>
+            La mort de Dobby, l’elfe de maison, marque un
+            début tragique en mettant en avant le danger.
+            Nos héros sont sur la voie de la quête des <strong>Reliques de la mort</strong>,
+            tout en affrontant des choix
+            moraux difficiles.
+            Ce roman est marqué par un ton plus sombre et
+            mature que les précédents, car nos héros sont
+            contraints de quitter le monde de l’enfance
+            pour devenir de jeunes adultes confrontés à
+            des défis de plus en plus dangereux.
+            Ils voyagent en découvrant des secrets sur les
+            origines de Voldemort et les reliques de la mort.</p>
+        <p class="txt4">Exploration de Thèmes Importants</p>
+        <p class="txt5">Le roman explore également des thèmes
+            importants tels que le pouvoir, la mort,
+            le sacrifice et la résilience. Il souligne la lutte de
+            Harry pour comprendre les choix moraux et
+            éthiques auxquels il est confronté, tout en
+            confrontant Voldemort dans une bataille
+            épique qui réunit les sorciers, les créatures
+            magiques et même les elfes de maison.</p>
+        <p class="txt4">Réponses aux Mystères de la Saga</p>
+        <p class="txt5">« Les Reliques de la Mort » apporte des
+            réponses aux questions laissées en suspens tout
+            au long de la série. Le passé de Dumbledore,
+            la véritable histoire de Severus Rogue,
+            la signification du survivant Harry Potter,
+            tout est révélé. L’histoire se termine dans une
+            bataille épique à Poudlard, qui verra la
+            destruction de nombreux personnages
+            bien-aimés.
+            <br>
+            Le livre se termine par un épilogue qui nous
+            montre le monde sorcier dix-neuf ans après
+            la défaite de Voldemort, avec les personnages
+            principaux désormais adultes, mariés et ayant
+            leurs propres enfants. Cela offre une touche
+            d’optimisme et de continuité à la série.
+            <br><br>
+
+        </p>
+    </div>
+    <footer>
+        <img class="logo3" src="/public/img/logo2.png" alt="">
+        <p class="txt_footer2"><img class="icone_footer" src="/public/img/appel.png" alt="contact">
+            XX-XX-XX-XX-XX
+        </p>
+        <p class="txt_footer1"><img class="icone_footer" src="/public/img/envelope.png" alt="mail">
+            edouard.hashimoto@edu.univ-fcomte.fr</p>
+            <a href="Contact.html"><p class="txt_footer3">Nous contacter</p></a>
+            <a href="mentionslegales.html"><p class="txt_footer3">Mentions légales</p></a>
+        <p><img class="icone_footer2" src="/public/img/logommi.png" alt=""><img class="icone_footer2"
+                src="/public/img/twitter.png" alt=""><img class="icone_footer2" src="/public/img/insta.png" alt="">
+        </p>
+    </footer>
+</body>
+
+</html>
