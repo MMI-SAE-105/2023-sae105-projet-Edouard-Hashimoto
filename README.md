@@ -1,8 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
-- NOM : 
-- PRÉNOM :
-- URL du site :
-- URL FIGMA :
+- NOM : Hashimoto
+- PRÉNOM : Edouard
+- URL du site : https://github.com/MMI-SAE-105/2023-sae105-projet-Edouard-Hashimoto
+- URL FIGMA : https://www.figma.com/file/v6UdVF1poTIG7SBKsKnBgX/Maquettes-projet-individuel-%E2%80%94-Edouard-HASHIMOTO-A1?type=design&node-id=1602%3A114&mode=design&t=ZMtudvxMdkPfvTI1-1
 
 # Structure de départ pour le projet individuel.
 
